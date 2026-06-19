@@ -1,0 +1,2 @@
+// Attachment business rules and use cases belong in this module.
+export {};
