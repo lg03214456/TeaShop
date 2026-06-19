@@ -1,7 +1,7 @@
 const statusItems = [
   "Next.js App Router OK",
   "Supabase Env OK",
-  "Ready for Vercel Deploy",
+  "Vercel Auto Deploy OK",
 ] as const;
 
 export function DeploymentStatus() {
