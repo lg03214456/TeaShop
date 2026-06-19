@@ -1,8 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f7f1e6;
+  --foreground: #302d26;
+  --tea-cream: #f7f1e6;
+  --tea-paper: #fffdf8;
+  --tea-green: #285b39;
+  --tea-green-dark: #173f35;
+  --tea-gold: #b49a62;
+  --tea-line: #d8c9a9;
+  --tea-muted: #756f63;
 }
 
 @theme inline {
@@ -12,15 +19,98 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+}
+
+.tea-consultant-theme {
+  color: var(--foreground);
+  background-color: var(--tea-cream);
+  background-image:
+    radial-gradient(circle at 8% 5%, rgb(180 154 98 / 9%), transparent 24rem),
+    linear-gradient(135deg, rgb(40 91 57 / 2%), transparent 45%);
+}
+
+.tea-consultant-theme .bg-white,
+.tea-consultant-theme .bg-white\/95 {
+  background-color: var(--tea-paper);
+}
+
+.tea-consultant-theme .bg-slate-50,
+.tea-consultant-theme .bg-\[\#f5f7f4\] {
+  background-color: #f7f1e6;
+}
+
+.tea-consultant-theme .bg-slate-100 {
+  background-color: #eee6d7;
+}
+
+.tea-consultant-theme .border-slate-100,
+.tea-consultant-theme .border-slate-200 {
+  border-color: var(--tea-line);
+}
+
+.tea-consultant-theme .text-slate-900,
+.tea-consultant-theme .text-slate-950 {
+  color: #302d26;
+}
+
+.tea-consultant-theme .text-slate-800,
+.tea-consultant-theme .text-slate-700,
+.tea-consultant-theme .text-slate-600 {
+  color: #514b40;
+}
+
+.tea-consultant-theme .text-slate-500,
+.tea-consultant-theme .text-slate-400 {
+  color: var(--tea-muted);
+}
+
+.tea-consultant-theme .bg-sky-50,
+.tea-consultant-theme .bg-sky-100,
+.tea-consultant-theme .bg-blue-50 {
+  background-color: #edf3eb;
+}
+
+.tea-consultant-theme .text-sky-700,
+.tea-consultant-theme .text-blue-700 {
+  color: #755a28;
+}
+
+.tea-consultant-theme .bg-sky-500,
+.tea-consultant-theme .bg-sky-700 {
+  background-color: #a17d3f;
+}
+
+.tea-consultant-theme .border-sky-200 {
+  border-color: #d8c49b;
+}
+
+.tea-consultant-theme .shadow-sm,
+.tea-consultant-theme .shadow-lg,
+.tea-consultant-theme .shadow-xl {
+  --tw-shadow-color: rgb(90 68 29 / 10%);
+}
+
+.tea-consultant-theme input,
+.tea-consultant-theme select,
+.tea-consultant-theme textarea {
+  accent-color: var(--tea-green);
+}
+
+.tea-consultant-theme input:focus,
+.tea-consultant-theme select:focus,
+.tea-consultant-theme textarea:focus {
+  border-color: var(--tea-gold);
+}
+
+.tea-consultant-theme table thead {
+  background-color: #f1eadc;
+}
+
+.tea-consultant-theme ::selection {
+  color: white;
+  background: var(--tea-green);
 }

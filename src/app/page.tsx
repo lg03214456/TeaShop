@@ -1,5 +1,5 @@
-import { DeploymentStatus } from "@/components/layout/deployment-status";
+import { PrototypeSwitcher } from "@/components/records/prototype-switcher";
 
 export default function Home() {
-  return <DeploymentStatus />;
+  return <PrototypeSwitcher />;
 }
